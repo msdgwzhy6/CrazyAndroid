@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        
+        <activity android:name=".a_01_WebView01.WebViewTestActivity01">
+            
+        </activity>
     </application>
 
 </manifest>
