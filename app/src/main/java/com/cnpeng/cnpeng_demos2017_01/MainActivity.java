@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.cnpeng.cnpeng_demos2017_01.a_01_WebView01.WebViewTestActivity01;
+import com.cnpeng.cnpeng_demos2017_01.a_02_ViewStubTest.ViewStubTestActivitiy;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.btWebviewTest01.setOnClickListener(this);
+        binding.btViewStub02.setOnClickListener(this);
 
     }
 
@@ -27,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.bt_webview_Test01:
                 CommonUtils.mStartActivity(this, WebViewTestActivity01.class);
+                break;
+            case R.id.bt_viewStub_02:
+                CommonUtils.mStartActivity(this, ViewStubTestActivitiy.class);
                 break;
         }
 
