@@ -1,6 +1,7 @@
 package com.cnpeng.cnpeng_demos2017_01;
 
 import android.content.Intent;
+import android.databinding.Bindable;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.view.View;
 import com.cnpeng.cnpeng_demos2017_01.a_01_WebView01.WebViewTestActivity01;
 import com.cnpeng.cnpeng_demos2017_01.a_02_ViewStubTest.ViewStubTestActivitiy;
 import com.cnpeng.cnpeng_demos2017_01.a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_04_ImageBrowser_V1.ImageBrowserActivityV1;
+import com.cnpeng.cnpeng_demos2017_01.a_05_scrollBallWithFinger.ScrollBallActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -21,7 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btWebviewTest01.setOnClickListener(this);
         binding.btViewStub02.setOnClickListener(this);
         binding.btWithoutXML.setOnClickListener(this);
-
+        binding.btImageBrowserV1.setOnClickListener(this);
+        binding.btScrollBall.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +39,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_withoutXML:
                 CommonUtils.mStartActivity(this, CreateViewWithoutXMLActivity.class);
+                break;
+            case R.id.bt_ImageBrowserV1:
+                CommonUtils.mStartActivity(this, ImageBrowserActivityV1.class);
+                break;
+            case R.id.bt_ScrollBall:
+                CommonUtils.mStartActivity(this, ScrollBallActivity.class);
                 break;
         }
     }

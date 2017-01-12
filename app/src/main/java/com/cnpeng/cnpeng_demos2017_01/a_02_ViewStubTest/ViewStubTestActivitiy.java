@@ -66,7 +66,9 @@ public class ViewStubTestActivitiy extends AppCompatActivity implements View.OnC
                 viewStub.setVisibility(View.INVISIBLE);
                 break;
             case R.id.btn_vs_changeHint:
-                hintText.setText("网络异常，无法刷新，请检查网络");
+                if (hintText!=null) {
+                    hintText.setText("网络异常，无法刷新，请检查网络");
+                }
                 break;
         }
     }

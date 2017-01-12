@@ -29,5 +29,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="03完全用代码创建布局"/>
+        <Button
+            android:id="@+id/bt_ImageBrowserV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04简易图片浏览器V1"/>
+        
+        <Button
+            android:id="@+id/bt_ScrollBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05跟随手指移动的小球"/>
     </LinearLayout>
 </layout>
