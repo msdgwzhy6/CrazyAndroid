@@ -1,5 +1,6 @@
 package com.cnpeng.cnpeng_demos2017_01.a_02_ViewStubTest;
 
+import android.content.ContentProvider;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -25,6 +26,7 @@ public class ViewStubTestActivitiy extends AppCompatActivity implements View.OnC
 
         init();
     }
+    
 
     /**
      * 初始化

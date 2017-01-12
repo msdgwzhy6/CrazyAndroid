@@ -18,11 +18,16 @@
             android:id="@+id/bt_webview_Test01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WebView测试01"/>
+            android:text="01自定义WebView错误提示"/>
         <Button
             android:id="@+id/bt_viewStub_02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ViewStub测试01"/>
+            android:text="02ViewStub使用介绍01"/>
+        <Button
+            android:id="@+id/bt_withoutXML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03完全用代码创建布局"/>
     </LinearLayout>
 </layout>
