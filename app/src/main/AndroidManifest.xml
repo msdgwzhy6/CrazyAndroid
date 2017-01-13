@@ -29,8 +29,11 @@
 
         <activity android:name=".a_04_ImageBrowser_V1.ImageBrowserActivityV1">
         </activity>
-        
+
         <activity android:name=".a_05_scrollBallWithFinger.ScrollBallActivity">
+        </activity>
+
+        <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity">
         </activity>
 
     </application>

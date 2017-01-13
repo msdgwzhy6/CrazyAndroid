@@ -12,6 +12,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_02_ViewStubTest.ViewStubTestActivitiy;
 import com.cnpeng.cnpeng_demos2017_01.a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_04_ImageBrowser_V1.ImageBrowserActivityV1;
 import com.cnpeng.cnpeng_demos2017_01.a_05_scrollBallWithFinger.ScrollBallActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_06_tablelayoutTest.TableLayoutTestActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_07_frameLayout_NoenLamp.NeonLampActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btWithoutXML.setOnClickListener(this);
         binding.btImageBrowserV1.setOnClickListener(this);
         binding.btScrollBall.setOnClickListener(this);
+        binding.btTableLayout.setOnClickListener(this);
+        binding.btNeonLamp.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_ScrollBall:
                 CommonUtils.mStartActivity(this, ScrollBallActivity.class);
+                break;
+            case R.id.bt_TableLayout:
+                CommonUtils.mStartActivity(this, TableLayoutTestActivity.class);
+                break;
+            case R.id.bt_neonLamp:
+                CommonUtils.mStartActivity(this, NeonLampActivity.class);
                 break;
         }
     }
