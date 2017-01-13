@@ -41,6 +41,8 @@
 
         <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity">
         </activity>
+
+        <activity android:name=".a_09_gridLayout_caculater.CaculaterActivity"></activity>
     </application>
 
 </manifest>
