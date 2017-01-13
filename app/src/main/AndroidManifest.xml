@@ -36,6 +36,11 @@
         <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity">
         </activity>
 
+        <activity android:name=".a_07_frameLayout_NoenLamp.NeonLampActivity">
+        </activity>
+
+        <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity">
+        </activity>
     </application>
 
 </manifest>
