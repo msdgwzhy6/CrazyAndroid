@@ -14,6 +14,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_04_ImageBrowser_V1.ImageBrowserActivityV
 import com.cnpeng.cnpeng_demos2017_01.a_05_scrollBallWithFinger.ScrollBallActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_06_tablelayoutTest.TableLayoutTestActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_07_frameLayout_NoenLamp.NeonLampActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_08_relativeLayout_plumBlossom.PlumBlossomActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_09_gridLayout_caculater.CaculaterActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btScrollBall.setOnClickListener(this);
         binding.btTableLayout.setOnClickListener(this);
         binding.btNeonLamp.setOnClickListener(this);
+        binding.btPlumBlossom.setOnClickListener(this);
+        binding.btCaculater.setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +59,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_neonLamp:
                 CommonUtils.mStartActivity(this, NeonLampActivity.class);
+                break;
+            case R.id.bt_plumBlossom:
+                CommonUtils.mStartActivity(this, PlumBlossomActivity.class);
+                break;
+            case R.id.bt_caculater:
+                CommonUtils.mStartActivity(this, CaculaterActivity.class);
                 break;
         }
     }

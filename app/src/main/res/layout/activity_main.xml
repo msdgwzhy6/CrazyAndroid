@@ -67,5 +67,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="07使用帧布局实现霓虹灯效果"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp5"/>
+        <Button
+            android:id="@+id/bt_plumBlossom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08使用相对布局实现梅花效果"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp5"/>
+        <Button
+            android:id="@+id/bt_caculater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09使用网格布局实现计算器界面"/>
     </LinearLayout>
 </layout>
