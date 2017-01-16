@@ -98,6 +98,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="10TextView的基本使用01"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_9Patch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11 点九图 9Patch 的基本使用"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_RBAndCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 RadioButton与CheckBox基本使用"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->

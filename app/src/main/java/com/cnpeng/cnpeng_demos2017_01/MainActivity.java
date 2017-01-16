@@ -17,6 +17,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_07_frameLayout_NoenLamp.NeonLampActivity
 import com.cnpeng.cnpeng_demos2017_01.a_08_relativeLayout_plumBlossom.PlumBlossomActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_09_gridLayout_caculater.CaculaterActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_10_textView_01.TextView01Activtiy;
+import com.cnpeng.cnpeng_demos2017_01.a_11_9PatchTest.NinePatchActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btPlumBlossom.setOnClickListener(this);
         binding.btCaculater.setOnClickListener(this);
         binding.btTextView01.setOnClickListener(this);
+        binding.bt9Patch.setOnClickListener(this);
+        binding.btRBAndCB.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +74,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_textView01:
                 CommonUtils.mStartActivity(this, TextView01Activtiy.class);
+                break;
+            case R.id.bt_9Patch:
+                CommonUtils.mStartActivity(this, NinePatchActivity.class);
+                break;
+            case R.id.bt_RBAndCB:
+                CommonUtils.mStartActivity(this, RadioButtonAndCheckBoxActivity.class);
                 break;
         }
     }

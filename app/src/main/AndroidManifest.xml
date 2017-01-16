@@ -43,9 +43,10 @@
         </activity>
 
         <activity android:name=".a_09_gridLayout_caculater.CaculaterActivity"></activity>
-        
+
         <activity android:name=".a_10_textView_01.TextView01Activtiy"></activity>
-    
+
+        <activity android:name=".a_11_9PatchTest.NinePatchActivity"></activity>
     </application>
 
 </manifest>
