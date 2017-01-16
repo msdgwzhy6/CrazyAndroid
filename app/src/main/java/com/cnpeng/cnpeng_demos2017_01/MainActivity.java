@@ -16,6 +16,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_06_tablelayoutTest.TableLayoutTestActivi
 import com.cnpeng.cnpeng_demos2017_01.a_07_frameLayout_NoenLamp.NeonLampActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_08_relativeLayout_plumBlossom.PlumBlossomActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_09_gridLayout_caculater.CaculaterActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_10_textView_01.TextView01Activtiy;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btNeonLamp.setOnClickListener(this);
         binding.btPlumBlossom.setOnClickListener(this);
         binding.btCaculater.setOnClickListener(this);
+        binding.btTextView01.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_caculater:
                 CommonUtils.mStartActivity(this, CaculaterActivity.class);
+                break;
+            case R.id.bt_textView01:
+                CommonUtils.mStartActivity(this, TextView01Activtiy.class);
                 break;
         }
     }
