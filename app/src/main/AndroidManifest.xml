@@ -47,6 +47,16 @@
         <activity android:name=".a_10_textView_01.TextView01Activtiy"></activity>
 
         <activity android:name=".a_11_9PatchTest.NinePatchActivity"></activity>
+
+        <activity
+            android:name=".a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity"></activity>
+
+        <activity android:name=".a_13_ToogleButtonAndSwitch.TBAndSwitchActivity"></activity>
+
+        <activity android:name=".a_14_TextClockAndAnalogClock.TcAndAcActivity"></activity>
+
+        <activity android:name=".a_15_chronometer.ChronometerActivity"></activity>
+
     </application>
 
 </manifest>

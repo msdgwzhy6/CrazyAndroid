@@ -19,6 +19,9 @@ import com.cnpeng.cnpeng_demos2017_01.a_09_gridLayout_caculater.CaculaterActivit
 import com.cnpeng.cnpeng_demos2017_01.a_10_textView_01.TextView01Activtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_11_9PatchTest.NinePatchActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_13_ToogleButtonAndSwitch.TBAndSwitchActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_14_TextClockAndAnalogClock.TcAndAcActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_15_chronometer.ChronometerActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -40,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btTextView01.setOnClickListener(this);
         binding.bt9Patch.setOnClickListener(this);
         binding.btRBAndCB.setOnClickListener(this);
+        binding.btTbAndSwitch.setOnClickListener(this);
+        binding.btTcAndAc.setOnClickListener(this);
+        binding.btChronometer.setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +86,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_RBAndCB:
                 CommonUtils.mStartActivity(this, RadioButtonAndCheckBoxActivity.class);
+                break;
+            case R.id.bt_TbAndSwitch:
+                CommonUtils.mStartActivity(this, TBAndSwitchActivity.class);
+                break;
+            case R.id.bt_TcAndAc:
+                CommonUtils.mStartActivity(this, TcAndAcActivity.class);
+                break;
+            case R.id.bt_chronometer:
+                CommonUtils.mStartActivity(this, ChronometerActivity.class);
                 break;
         }
     }

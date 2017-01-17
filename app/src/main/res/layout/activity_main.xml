@@ -114,6 +114,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="12 RadioButton与CheckBox基本使用"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_TbAndSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13 ToggleButton和Switch的基本使用"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_TcAndAc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14 时钟控件TextClock和AnalogClock"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_chronometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 Chronometer计时器"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->
