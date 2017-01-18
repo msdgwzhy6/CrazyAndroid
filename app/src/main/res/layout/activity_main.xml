@@ -158,6 +158,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="17 ImageButton和ZoomButton"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_QucikContactBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 QucikContactBadge关联联系人"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->

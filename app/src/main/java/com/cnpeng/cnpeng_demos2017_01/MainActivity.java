@@ -24,6 +24,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_13_ToogleButtonAndSwitch.TBAndSwitchActi
 import com.cnpeng.cnpeng_demos2017_01.a_14_TextClockAndAnalogClock.TcAndAcActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_15_chronometer.ChronometerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_18_QuickContactBadge.QuickContactBadgeActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btChronometer.setOnClickListener(this);
         binding.btImageBrowserV2.setOnClickListener(this);
         binding.btImageButtonAndZoomButton.setOnClickListener(this);
+        binding.btQucikContactBadge.setOnClickListener(this);
     }
 
     @Override
@@ -105,6 +107,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_ImageButtonAndZoomButton:
                 CommonUtils.mStartActivity(this, ImageButtonAndZoomButtonActivity.class);
+                break;
+            case R.id.bt_QucikContactBadge:
+                CommonUtils.mStartActivity(this, QuickContactBadgeActivity.class);
                 break;
         }
     }

@@ -61,6 +61,8 @@
 
         <activity
             android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
+    
+        <activity android:name=".a_18_QuickContactBadge.QuickContactBadgeActivity"></activity>
     </application>
 
 </manifest>
