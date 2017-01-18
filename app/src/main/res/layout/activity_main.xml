@@ -140,6 +140,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="15 Chronometer计时器"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_ImageBrowserV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16 简易图片浏览器V2"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_ImageButtonAndZoomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17 ImageButton和ZoomButton"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->

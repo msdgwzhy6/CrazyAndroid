@@ -57,6 +57,10 @@
 
         <activity android:name=".a_15_chronometer.ChronometerActivity"></activity>
 
+        <activity android:name=".A_16_ImageBrowserV2.ImageBrowserV2Activtiy"></activity>
+
+        <activity
+            android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
     </application>
 
 </manifest>

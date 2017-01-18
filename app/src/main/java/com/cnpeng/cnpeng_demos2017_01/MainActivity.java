@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.cnpeng.cnpeng_demos2017_01.A_16_ImageBrowserV2.ImageBrowserV2Activtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_01_WebView01.WebViewTestActivity01;
 import com.cnpeng.cnpeng_demos2017_01.a_02_ViewStubTest.ViewStubTestActivitiy;
 import com.cnpeng.cnpeng_demos2017_01.a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity;
@@ -22,6 +23,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_12_RadioButtonAndCheckBox.RadioButtonAnd
 import com.cnpeng.cnpeng_demos2017_01.a_13_ToogleButtonAndSwitch.TBAndSwitchActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_14_TextClockAndAnalogClock.TcAndAcActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_15_chronometer.ChronometerActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btTbAndSwitch.setOnClickListener(this);
         binding.btTcAndAc.setOnClickListener(this);
         binding.btChronometer.setOnClickListener(this);
+        binding.btImageBrowserV2.setOnClickListener(this);
+        binding.btImageButtonAndZoomButton.setOnClickListener(this);
     }
 
     @Override
@@ -95,6 +99,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_chronometer:
                 CommonUtils.mStartActivity(this, ChronometerActivity.class);
+                break;
+            case R.id.bt_ImageBrowserV2:
+                CommonUtils.mStartActivity(this, ImageBrowserV2Activtiy.class);
+                break;
+            case R.id.bt_ImageButtonAndZoomButton:
+                CommonUtils.mStartActivity(this, ImageButtonAndZoomButtonActivity.class);
                 break;
         }
     }
