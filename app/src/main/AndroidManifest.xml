@@ -67,6 +67,8 @@
         <activity android:name=".a_19_ListView01.ListView01Activity"></activity>
 
         <activity android:name=".a_20_showLvWithArrayAdapter.ArrayAdapterActivity"></activity>
+        
+        <activity android:name=".a_21_ListActivity.MyListActivity"></activity>
     </application>
 
 </manifest>
