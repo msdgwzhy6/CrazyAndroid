@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listViewEntries">
+        <item>张三1</item>
+        <item>李四2</item>
+        <item>王五3</item>
+        <item>赵六4</item>
+        <item>王二麻子5</item>
+    </string-array>
+</resources>

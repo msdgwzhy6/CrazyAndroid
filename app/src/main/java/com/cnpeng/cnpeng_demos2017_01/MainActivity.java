@@ -25,6 +25,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_14_TextClockAndAnalogClock.TcAndAcActivi
 import com.cnpeng.cnpeng_demos2017_01.a_15_chronometer.ChronometerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_18_QuickContactBadge.QuickContactBadgeActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_19_ListView01.ListView01Activity;
+import com.cnpeng.cnpeng_demos2017_01.a_20_showLvWithArrayAdapter.ArrayAdapterActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btImageBrowserV2.setOnClickListener(this);
         binding.btImageButtonAndZoomButton.setOnClickListener(this);
         binding.btQucikContactBadge.setOnClickListener(this);
+        binding.btListView01.setOnClickListener(this);
+        binding.btArrayAdapter01.setOnClickListener(this);
     }
 
     @Override
@@ -110,6 +114,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_QucikContactBadge:
                 CommonUtils.mStartActivity(this, QuickContactBadgeActivity.class);
+                break;
+            case R.id.bt_ListView01:
+                CommonUtils.mStartActivity(this, ListView01Activity.class);
+                break;
+            case R.id.bt_ArrayAdapter01:
+                CommonUtils.mStartActivity(this, ArrayAdapterActivity.class);
                 break;
         }
     }

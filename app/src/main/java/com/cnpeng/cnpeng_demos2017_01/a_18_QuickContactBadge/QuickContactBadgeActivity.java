@@ -21,5 +21,6 @@ public class QuickContactBadgeActivity extends AppCompatActivity {
         QuickContactBadge quickContactBadge= (QuickContactBadge) findViewById(R.id.quickContactbadge);
         //关联联系人
         quickContactBadge.assignContactFromPhone("11920169901",false);
+
     }
 }

@@ -61,8 +61,12 @@
 
         <activity
             android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
-    
+
         <activity android:name=".a_18_QuickContactBadge.QuickContactBadgeActivity"></activity>
+
+        <activity android:name=".a_19_ListView01.ListView01Activity"></activity>
+
+        <activity android:name=".a_20_showLvWithArrayAdapter.ArrayAdapterActivity"></activity>
     </application>
 
 </manifest>

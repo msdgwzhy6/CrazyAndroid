@@ -166,6 +166,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="18 QucikContactBadge关联联系人"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_ListView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19 ListView自定义分割线并用entries指定内容"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_ArrayAdapter01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 使用ArrayAdapter展示ListView"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->
