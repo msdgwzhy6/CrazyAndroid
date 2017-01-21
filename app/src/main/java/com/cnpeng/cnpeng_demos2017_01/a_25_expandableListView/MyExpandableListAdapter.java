@@ -97,7 +97,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
             groupHold.ivGoToChildLv.setImageResource(R.drawable.send_btn_add);
         }
 
-        //setTag() 方法接收的类型是object ，所以可将position和converView先封装在Map中。Bundle中无法封装view,所以不用bundle
+        //setTag() 方法接收的类型是object ，所以可将position和converView先封装在Map或bundle容器中。注意：Bundle中无法封装view,
         Map<String, Object> tagMap = new HashMap<>();
         tagMap.put("groupPosition", groupPosition);
         tagMap.put("isExpanded", isExpanded);

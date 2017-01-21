@@ -32,10 +32,10 @@ public class ExpandableListViewActivity extends AppCompatActivity {
         final ExpandableListView elv01 = (ExpandableListView) findViewById(R.id.elv_01);
 
         //模拟数据（数组，集合都可以，这里使用数组）
-        final String[] classes = new String[]{"一班", "二班", "三班", "四班"};
+        final String[] classes = new String[]{"一班", "二班", "三班", "四班","五班"};
         final String[][] students = new String[][]{{"张三1", "李四1", "王五1", "赵六1", "钱七1", "高八1"}, {"张三1", "李四1", "王五1", 
                 "赵六1", "钱七1", "高八1"}, {"张三1", "李四1", "王五1", "赵六1", "钱七1", "高八1"}, {"张三1", "李四1", "王五1", "赵六1", "钱七1",
-                "高八1"}};
+                "高八1"},{}};
 
         //自定义 展开/收起  图标的点击事件。position和 isExpand 都是通过tag 传递的
         ivGoToChildClickListener = new View.OnClickListener() {
@@ -44,7 +44,8 @@ public class ExpandableListViewActivity extends AppCompatActivity {
                 //获取被点击图标所在的group的索引
                 Map<String, Object> map = (Map<String, Object>) v.getTag();
                 int groupPosition = (int) map.get("groupPosition");
-                boolean isExpand = (boolean) map.get("isExpanded");
+//                boolean isExpand = (boolean) map.get("isExpanded");   //这种是通过tag传值
+                boolean isExpand = elv01.isGroupExpanded(groupPosition);    //判断分组是否展开
 
                 if (isExpand) {
                     elv01.collapseGroup(groupPosition);
@@ -58,6 +59,9 @@ public class ExpandableListViewActivity extends AppCompatActivity {
         MyExpandableListAdapter adapter = new MyExpandableListAdapter(classes, students, this, 
                 ivGoToChildClickListener);
         elv01.setAdapter(adapter);
+        
+        //默认展开第一个分组
+        elv01.expandGroup(0);
 
         //展开某个分组时，并关闭其他分组。注意这里设置的是 ExpandListener
         elv01.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {

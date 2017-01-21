@@ -10,7 +10,7 @@
         android:padding="@dimen/dp10"
         android:text="扩展BaseExpandableListAdapter展示ExpandableListView"/>
 
-    <!--这个默认的GroupIndicator 还是直接置空吧，默认的并不好用-->
+    <!--这个默认的GroupIndicator 还是直接置空吧，默认的太鸡肋-->
     <ExpandableListView
         android:id="@+id/elv_01"
         android:layout_width="match_parent"

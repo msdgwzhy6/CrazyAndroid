@@ -4,6 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="horizontal"
               android:paddingLeft="@dimen/dp15">
+    <!--要取消CheckBox焦点，防止争抢条目的焦点-->
     <CheckBox
         android:id="@+id/cb_elvChild"
         android:layout_width="wrap_content"
