@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.cnpeng.cnpeng_demos2017_01"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnpeng.cnpeng_demos2017_01">
 
     <!--声明权限-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,34 +13,26 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".a_01_WebView01.WebViewTestActivity01">
-        </activity>
+        <activity android:name=".a_01_WebView01.WebViewTestActivity01"></activity>
 
-        <activity android:name=".a_02_ViewStubTest.ViewStubTestActivitiy">
-        </activity>
+        <activity android:name=".a_02_ViewStubTest.ViewStubTestActivitiy"></activity>
 
-        <activity android:name=".a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity">
-        </activity>
+        <activity android:name=".a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity"></activity>
 
-        <activity android:name=".a_04_ImageBrowser_V1.ImageBrowserActivityV1">
-        </activity>
+        <activity android:name=".a_04_ImageBrowser_V1.ImageBrowserActivityV1"></activity>
 
-        <activity android:name=".a_05_scrollBallWithFinger.ScrollBallActivity">
-        </activity>
+        <activity android:name=".a_05_scrollBallWithFinger.ScrollBallActivity"></activity>
 
-        <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity">
-        </activity>
+        <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity"></activity>
 
-        <activity android:name=".a_07_frameLayout_NoenLamp.NeonLampActivity">
-        </activity>
+        <activity android:name=".a_07_frameLayout_NoenLamp.NeonLampActivity"></activity>
 
-        <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity">
-        </activity>
+        <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity"></activity>
 
         <activity android:name=".a_09_gridLayout_caculater.CaculaterActivity"></activity>
 
@@ -48,8 +40,7 @@
 
         <activity android:name=".a_11_9PatchTest.NinePatchActivity"></activity>
 
-        <activity
-            android:name=".a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity"></activity>
+        <activity android:name=".a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity"></activity>
 
         <activity android:name=".a_13_ToogleButtonAndSwitch.TBAndSwitchActivity"></activity>
 
@@ -59,8 +50,7 @@
 
         <activity android:name=".A_16_ImageBrowserV2.ImageBrowserV2Activtiy"></activity>
 
-        <activity
-            android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
+        <activity android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
 
         <activity android:name=".a_18_QuickContactBadge.QuickContactBadgeActivity"></activity>
 
@@ -73,6 +63,7 @@
         <activity android:name=".a_23_autoCompleteTextView.AutoCompleteTextViewActivity"></activity>
         <activity android:name=".a_24_gridView.GridViewActivity"></activity>
         <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
+        <activity android:name=".a_26_spinner.SpinnerActivity"></activity>
 
     </application>
 
