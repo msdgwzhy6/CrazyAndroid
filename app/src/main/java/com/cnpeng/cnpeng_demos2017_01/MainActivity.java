@@ -1,10 +1,8 @@
 package com.cnpeng.cnpeng_demos2017_01;
 
-import android.content.Intent;
-import android.databinding.Bindable;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.cnpeng.cnpeng_demos2017_01.A_16_ImageBrowserV2.ImageBrowserV2Activtiy;
@@ -28,6 +26,10 @@ import com.cnpeng.cnpeng_demos2017_01.a_18_QuickContactBadge.QuickContactBadgeAc
 import com.cnpeng.cnpeng_demos2017_01.a_19_ListView01.ListView01Activity;
 import com.cnpeng.cnpeng_demos2017_01.a_20_showLvWithArrayAdapter.ArrayAdapterActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_21_ListActivity.MyListActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_22_simpleAdapter.SimpleAdapterActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_23_autoCompleteTextView.AutoCompleteTextViewActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_24_gridView.GridViewActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_25_expandableListView.ExpandableListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -58,6 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btListView01.setOnClickListener(this);
         binding.btArrayAdapter01.setOnClickListener(this);
         binding.btListActivity.setOnClickListener(this);
+        binding.btSimpleAdapterActivity.setOnClickListener(this);
+        binding.btAutoCompleteTextView.setOnClickListener(this);
+        binding.btGridView.setOnClickListener(this);
+        binding.btExpandableListView.setOnClickListener(this);
     }
 
     @Override
@@ -125,6 +131,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_ListActivity:
                 CommonUtils.mStartActivity(this, MyListActivity.class);
+                break;
+            case R.id.bt_simpleAdapterActivity:
+                CommonUtils.mStartActivity(this, SimpleAdapterActivity.class);
+                break;
+            case R.id.bt_autoCompleteTextView:
+                CommonUtils.mStartActivity(this, AutoCompleteTextViewActivity.class);
+                break;
+            case R.id.bt_GridView:
+                CommonUtils.mStartActivity(this, GridViewActivity.class);
+                break;
+            case R.id.bt_ExpandableListView:
+                CommonUtils.mStartActivity(this, ExpandableListViewActivity.class);
                 break;
         }
     }

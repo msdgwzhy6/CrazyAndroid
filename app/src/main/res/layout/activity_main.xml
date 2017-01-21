@@ -182,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="20 使用ArrayAdapter展示ListView"/>
-            
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp5"/>
@@ -191,6 +191,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="21 使用ListActivity展示ListView"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_simpleAdapterActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22 使用SimpleAdapter展示ListView"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23 AutoCompleteTextView"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_GridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 GridView的基本使用"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+            <Button
+                android:id="@+id/bt_ExpandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25 ExpandableListView的基本使用"/>
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->

@@ -2,10 +2,7 @@ package com.cnpeng.cnpeng_demos2017_01.a_21_ListActivity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
-
-import com.cnpeng.cnpeng_demos2017_01.R;
 
 /**
  * Created by CnPeng on 2017/1/19.

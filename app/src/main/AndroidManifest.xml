@@ -67,8 +67,13 @@
         <activity android:name=".a_19_ListView01.ListView01Activity"></activity>
 
         <activity android:name=".a_20_showLvWithArrayAdapter.ArrayAdapterActivity"></activity>
-        
+
         <activity android:name=".a_21_ListActivity.MyListActivity"></activity>
+
+        <activity android:name=".a_23_autoCompleteTextView.AutoCompleteTextViewActivity"></activity>
+        <activity android:name=".a_24_gridView.GridViewActivity"></activity>
+        <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
+
     </application>
 
 </manifest>
