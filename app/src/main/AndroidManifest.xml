@@ -67,7 +67,7 @@
         <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
         <activity android:name=".a_26_spinner.SpinnerActivity"
                   android:theme="@style/Base.Theme.AppCompat.Light"></activity>
-
+        <activity android:name=".a_27_AdapterViewFlipper.AdapterViewFlipperActivity"></activity>
     </application>
 
 </manifest>
