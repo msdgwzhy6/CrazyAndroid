@@ -18,29 +18,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".a_01_WebView01.WebViewTestActivity01">
-        </activity>
+        <activity android:name=".a_01_WebView01.WebViewTestActivity01"></activity>
 
-        <activity android:name=".a_02_ViewStubTest.ViewStubTestActivitiy">
-        </activity>
+        <activity android:name=".a_02_ViewStubTest.ViewStubTestActivitiy"></activity>
 
-        <activity android:name=".a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity">
-        </activity>
+        <activity android:name=".a_03_CreateViewWithoutXML.CreateViewWithoutXMLActivity"></activity>
 
-        <activity android:name=".a_04_ImageBrowser_V1.ImageBrowserActivityV1">
-        </activity>
+        <activity android:name=".a_04_ImageBrowser_V1.ImageBrowserActivityV1"></activity>
 
-        <activity android:name=".a_05_scrollBallWithFinger.ScrollBallActivity">
-        </activity>
+        <activity android:name=".a_05_scrollBallWithFinger.ScrollBallActivity"></activity>
 
-        <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity">
-        </activity>
+        <activity android:name=".a_06_tablelayoutTest.TableLayoutTestActivity"></activity>
 
-        <activity android:name=".a_07_frameLayout_NoenLamp.NeonLampActivity">
-        </activity>
+        <activity android:name=".a_07_frameLayout_NoenLamp.NeonLampActivity"></activity>
 
-        <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity">
-        </activity>
+        <activity android:name=".a_08_relativeLayout_plumBlossom.PlumBlossomActivity"></activity>
 
         <activity android:name=".a_09_gridLayout_caculater.CaculaterActivity"></activity>
 
@@ -73,6 +65,8 @@
         <activity android:name=".a_23_autoCompleteTextView.AutoCompleteTextViewActivity"></activity>
         <activity android:name=".a_24_gridView.GridViewActivity"></activity>
         <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
+        <activity android:name=".a_26_spinner.SpinnerActivity"
+                  android:theme="@style/Base.Theme.AppCompat.Light"></activity>
 
     </application>
 

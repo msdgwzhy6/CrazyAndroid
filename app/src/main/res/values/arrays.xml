@@ -7,4 +7,11 @@
         <item>赵六4</item>
         <item>王二麻子5</item>
     </string-array>
+
+    <string-array name="books">
+        <item >西游记</item>
+        <item >水浒传</item>
+        <item >三国演义</item>
+        <item >红楼梦</item>
+    </string-array>
 </resources>
