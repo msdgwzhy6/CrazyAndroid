@@ -234,6 +234,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="26 使用Spinner展示下拉列表" />
+<<<<<<< HEAD
       <Space
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp5" />
@@ -243,6 +244,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="27 使用AdapterViewFlipper展示自动播放的图片库" />
+=======
+>>>>>>> db8c03797ad05e66124a648ec2fa0d0df09bd7e5
         </LinearLayout>
     </ScrollView>
     <!--</LinearLayout>-->

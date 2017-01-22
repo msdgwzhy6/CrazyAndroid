@@ -31,7 +31,10 @@ import com.cnpeng.cnpeng_demos2017_01.a_23_autoCompleteTextView.AutoCompleteText
 import com.cnpeng.cnpeng_demos2017_01.a_24_gridView.GridViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_25_expandableListView.ExpandableListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_26_spinner.SpinnerActivity;
+<<<<<<< HEAD
 import com.cnpeng.cnpeng_demos2017_01.a_27_AdapterViewFlipper.AdapterViewFlipperActivity;
+=======
+>>>>>>> db8c03797ad05e66124a648ec2fa0d0df09bd7e5
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -67,7 +70,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btGridView.setOnClickListener(this);
         binding.btExpandableListView.setOnClickListener(this);
         binding.btSpinner.setOnClickListener(this);
+<<<<<<< HEAD
         binding.btAdapterViewFlipperActivity.setOnClickListener(this);
+=======
+>>>>>>> db8c03797ad05e66124a648ec2fa0d0df09bd7e5
     }
 
     @Override
@@ -151,9 +157,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_Spinner:
                 CommonUtils.mStartActivity(this, SpinnerActivity.class);
                 break;
+<<<<<<< HEAD
             case R.id.bt_AdapterViewFlipperActivity:
                 CommonUtils.mStartActivity(this, AdapterViewFlipperActivity.class);
                 break;
+=======
+>>>>>>> db8c03797ad05e66124a648ec2fa0d0df09bd7e5
         }
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.cnpeng.cnpeng_demos2017_01"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnpeng.cnpeng_demos2017_01">
 
     <!--声明权限-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -40,8 +40,7 @@
 
         <activity android:name=".a_11_9PatchTest.NinePatchActivity"></activity>
 
-        <activity
-            android:name=".a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity"></activity>
+        <activity android:name=".a_12_RadioButtonAndCheckBox.RadioButtonAndCheckBoxActivity"></activity>
 
         <activity android:name=".a_13_ToogleButtonAndSwitch.TBAndSwitchActivity"></activity>
 
@@ -51,8 +50,7 @@
 
         <activity android:name=".A_16_ImageBrowserV2.ImageBrowserV2Activtiy"></activity>
 
-        <activity
-            android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
+        <activity android:name=".a_17_imageButtonAndZoomButton.ImageButtonAndZoomButtonActivity"></activity>
 
         <activity android:name=".a_18_QuickContactBadge.QuickContactBadgeActivity"></activity>
 
@@ -65,9 +63,14 @@
         <activity android:name=".a_23_autoCompleteTextView.AutoCompleteTextViewActivity"></activity>
         <activity android:name=".a_24_gridView.GridViewActivity"></activity>
         <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
+<<<<<<< HEAD
         <activity android:name=".a_26_spinner.SpinnerActivity"
                   android:theme="@style/Base.Theme.AppCompat.Light"></activity>
         <activity android:name=".a_27_AdapterViewFlipper.AdapterViewFlipperActivity"></activity>
+=======
+        <activity android:name=".a_26_spinner.SpinnerActivity"></activity>
+
+>>>>>>> db8c03797ad05e66124a648ec2fa0d0df09bd7e5
     </application>
 
 </manifest>
