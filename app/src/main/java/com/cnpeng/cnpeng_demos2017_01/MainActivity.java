@@ -32,6 +32,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_24_gridView.GridViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_25_expandableListView.ExpandableListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_26_spinner.SpinnerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_27_AdapterViewFlipper.AdapterViewFlipperActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_28_stackView.StackViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btExpandableListView.setOnClickListener(this);
         binding.btSpinner.setOnClickListener(this);
         binding.btAdapterViewFlipperActivity.setOnClickListener(this);
-
+        binding.btStackView.setOnClickListener(this);
     }
 
     @Override
@@ -154,6 +155,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_AdapterViewFlipperActivity:
                 CommonUtils.mStartActivity(this, AdapterViewFlipperActivity.class);
+                break;
+            case R.id.bt_StackView:
+                CommonUtils.mStartActivity(this, StackViewActivity.class);
                 break;
 
         }
