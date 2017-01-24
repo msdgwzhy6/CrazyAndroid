@@ -253,6 +253,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="28 使用StackView展示叠加图"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+
+            <Button
+                android:id="@+id/bt_progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="29 ProgressBar的使用"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp5"/>
+
+            <Button
+                android:id="@+id/bt_progressBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 显示在标题栏上的progressBar"/>
 
         </LinearLayout>
     </ScrollView>

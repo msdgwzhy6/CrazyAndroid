@@ -70,6 +70,10 @@
                   android:theme="@style/Base.Theme.AppCompat.Light"></activity>
         <activity android:name=".a_27_AdapterViewFlipper.AdapterViewFlipperActivity"></activity>
         <activity android:name=".a_28_stackView.StackViewActivity"></activity>
+        <activity android:name=".a_29_progressBar.ProgressBarActivity"></activity>
+        <activity android:name=".a_30_SeekBar.SeekBarActivtiy"></activity>
+
+
     </application>
 
 </manifest>
