@@ -8,4 +8,12 @@
         <item name="colorAccent">#739ef2</item>
     </style>
 
+    <!--这个是用来更改RatingBar 的默认图片的，其实可以直接给RatingBar设置 progressDrawbale-->
+    <style name="myRatingBar" parent="Base.Widget.AppCompat.RatingBar">
+        <!-- Customize your theme here. -->
+        <item name="android:progressDrawable">@drawable/layerlist_ratingbar</item>
+        <item name="android:maxHeight">@dimen/dp15</item>
+        <item name="android:minHeight">@dimen/dp15</item>
+    </style>
+
 </resources>

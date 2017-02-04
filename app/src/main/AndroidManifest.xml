@@ -72,7 +72,7 @@
         <activity android:name=".a_28_stackView.StackViewActivity"></activity>
         <activity android:name=".a_29_progressBar.ProgressBarActivity"></activity>
         <activity android:name=".a_30_SeekBar.SeekBarActivtiy"></activity>
-
+        <activity android:name=".a_31_RatingBar.RatingBarActivity"></activity>
 
     </application>
 

@@ -35,6 +35,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_27_AdapterViewFlipper.AdapterViewFlipper
 import com.cnpeng.cnpeng_demos2017_01.a_28_stackView.StackViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_29_progressBar.ProgressBarActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_30_SeekBar.SeekBarActivtiy;
+import com.cnpeng.cnpeng_demos2017_01.a_31_RatingBar.RatingBarActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btStackView.setOnClickListener(this);
         binding.btProgressBar.setOnClickListener(this);
         binding.btProgressBar2.setOnClickListener(this);
+        binding.btRatingBar.setOnClickListener(this);
     }
 
     @Override
@@ -168,6 +170,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_progressBar2:
                 CommonUtils.mStartActivity(this, SeekBarActivtiy.class);
+                break;
+            case R.id.bt_RatingBar:
+                CommonUtils.mStartActivity(this, RatingBarActivity.class);
                 break;
 
         }

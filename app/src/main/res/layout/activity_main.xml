@@ -271,6 +271,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="30 显示在标题栏上的progressBar"/>
+            <Button
+                android:id="@+id/bt_RatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="31 根据RatingBar的进度动态改变图片透明度"/>
 
         </LinearLayout>
     </ScrollView>

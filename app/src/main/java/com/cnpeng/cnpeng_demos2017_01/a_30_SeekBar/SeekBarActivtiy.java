@@ -31,7 +31,7 @@ public class SeekBarActivtiy extends Activity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 //进度改变的时候，动态的设置图片透明度--使用setImageAlpha()
                 ivSeekBar.setImageAlpha(progress);
-            }
+            } 
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
