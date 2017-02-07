@@ -1,9 +1,11 @@
 package com.cnpeng.cnpeng_demos2017_01;
 
+import android.app.Activity;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ViewSwitcher;
 
 import com.cnpeng.cnpeng_demos2017_01.A_16_ImageBrowserV2.ImageBrowserV2Activtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_01_WebView01.WebViewTestActivity01;
@@ -36,6 +38,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_28_stackView.StackViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_29_progressBar.ProgressBarActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_30_SeekBar.SeekBarActivtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_31_RatingBar.RatingBarActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity2;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -76,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btProgressBar.setOnClickListener(this);
         binding.btProgressBar2.setOnClickListener(this);
         binding.btRatingBar.setOnClickListener(this);
+        binding.btViewSwitcher.setOnClickListener(this);
+        binding.btViewSwitcher2.setOnClickListener(this);
     }
 
     @Override
@@ -174,6 +180,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_RatingBar:
                 CommonUtils.mStartActivity(this, RatingBarActivity.class);
                 break;
+            case R.id.bt_ViewSwitcher:
+                CommonUtils.mStartActivity(this, ViewSwitcherActivity.class);
+                break;
+            case R.id.bt_ViewSwitcher2:
+                CommonUtils.mStartActivity(this, ViewSwitcherActivity2.class);
+                break;
+            
 
         }
     }

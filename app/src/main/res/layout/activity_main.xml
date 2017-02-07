@@ -277,6 +277,18 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="31 根据RatingBar的进度动态改变图片透明度"/>
+            <Button
+                android:id="@+id/bt_ViewSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="32 ViewSwitcher的基本使用"/>
+            <Button
+                android:id="@+id/bt_ViewSwitcher2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="32 ViewSwitcher仿写安卓的launcher界面"/>
 
         </LinearLayout>
     </ScrollView>
