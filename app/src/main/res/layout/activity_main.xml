@@ -270,25 +270,42 @@
                 android:id="@+id/bt_progressBar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
                 android:text="30 显示在标题栏上的progressBar"/>
             <Button
                 android:id="@+id/bt_RatingBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:gravity="left|center_vertical"
                 android:text="31 根据RatingBar的进度动态改变图片透明度"/>
             <Button
                 android:id="@+id/bt_ViewSwitcher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
                 android:text="32 ViewSwitcher的基本使用"/>
             <Button
                 android:id="@+id/bt_ViewSwitcher2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="32 ViewSwitcher仿写安卓的launcher界面"/>
+            <Button
+                android:id="@+id/bt_ImageSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="33 ImageSwitcher实现带动画的图片浏览器"/>
+            <Button
+                android:id="@+id/bt_ImageSpanAndSpannableString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b01_ImageSpan和SpannableString配合使用给TextView任意位置插入图片"/>
 
         </LinearLayout>
     </ScrollView>
