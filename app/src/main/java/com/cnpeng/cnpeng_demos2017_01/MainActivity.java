@@ -40,6 +40,8 @@ import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity2;
 import com.cnpeng.cnpeng_demos2017_01.a_33_ImageSwitcher.ImageSwitcherActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_34_textSwitcher.TextSwitcherActvity;
+import com.cnpeng.cnpeng_demos2017_01.a_35_viewFlipper.ViewFlipperActviity;
+import com.cnpeng.cnpeng_demos2017_01.a_36_Toast.ImageToastActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
@@ -86,6 +88,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btImageSwitcher.setOnClickListener(this);
         binding.btImageSpanAndSpannableString.setOnClickListener(this);
         binding.btTextSwitcher.setOnClickListener(this);
+        binding.btViewFlipper.setOnClickListener(this);
+        binding.btImageToast.setOnClickListener(this);
     }
 
     @Override
@@ -198,6 +202,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_TextSwitcher:
                 CommonUtils.mStartActivity(this, TextSwitcherActvity.class);
+                break;
+            case R.id.bt_ViewFlipper:
+                CommonUtils.mStartActivity(this, ViewFlipperActviity.class);
+                break;
+            case R.id.bt_imageToast:
+                CommonUtils.mStartActivity(this, ImageToastActivity.class);
                 break;
         }
     }

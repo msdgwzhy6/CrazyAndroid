@@ -79,6 +79,8 @@
         <activity
             android:name=".b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity"></activity>
         <activity android:name=".a_34_textSwitcher.TextSwitcherActvity"></activity>
+        <activity android:name=".a_35_viewFlipper.ViewFlipperActviity"></activity>
+        <activity android:name=".a_36_Toast.ImageToastActivity"></activity>
     </application>
 
 </manifest>

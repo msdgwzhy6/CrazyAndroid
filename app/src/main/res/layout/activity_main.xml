@@ -299,7 +299,6 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="33 ImageSwitcher实现带动画的图片浏览器"/>
-
             <Button
                 android:id="@+id/bt_TextSwitcher"
                 android:layout_width="match_parent"
@@ -307,6 +306,21 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="34 TextSwitcher的基本使用"/>
+            <Button
+                android:id="@+id/bt_ViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="35_ViewFlipper实现自动播放的图片库"/>
+            <Button
+                android:id="@+id/bt_imageToast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="36_带有图片的Toast"/>
+
 
             <Button
                 android:id="@+id/bt_ImageSpanAndSpannableString"
@@ -316,9 +330,6 @@
                 android:gravity="left|center_vertical"
                 android:text="b01_ImageSpan和SpannableString配合使用给TextView任意位置插入图片"/>
 
-
         </LinearLayout>
     </ScrollView>
-
-
 </layout>
