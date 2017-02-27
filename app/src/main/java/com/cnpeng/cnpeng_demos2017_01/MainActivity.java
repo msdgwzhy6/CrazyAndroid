@@ -39,6 +39,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_31_RatingBar.RatingBarActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_32_ViewSwitcher.ViewSwitcherActivity2;
 import com.cnpeng.cnpeng_demos2017_01.a_33_ImageSwitcher.ImageSwitcherActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_34_textSwitcher.TextSwitcherActvity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btViewSwitcher2.setOnClickListener(this);
         binding.btImageSwitcher.setOnClickListener(this);
         binding.btImageSpanAndSpannableString.setOnClickListener(this);
+        binding.btTextSwitcher.setOnClickListener(this);
     }
 
     @Override
@@ -193,6 +195,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_ImageSpanAndSpannableString:
                 CommonUtils.mStartActivity(this, SpannableStringAndImageSpanActivity.class);
+                break;
+            case R.id.bt_TextSwitcher:
+                CommonUtils.mStartActivity(this, TextSwitcherActvity.class);
                 break;
         }
     }
