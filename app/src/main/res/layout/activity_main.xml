@@ -327,14 +327,21 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="37_calendarView日历视图的使用"/>
-            
+
             <Button
                 android:id="@+id/bt_calendarPicker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
-                android:text="37_1_calendarPicker日期选择器的使用"/>
+                android:text="38_calendarPicker日期选择器的使用"/>
+            <Button
+                android:id="@+id/bt_datePickerDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="39_DatePickerDialog和TimePickerDialog的使用"/>
 
 
             <Button
