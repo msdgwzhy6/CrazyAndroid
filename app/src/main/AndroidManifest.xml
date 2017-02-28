@@ -81,6 +81,8 @@
         <activity android:name=".a_34_textSwitcher.TextSwitcherActvity"></activity>
         <activity android:name=".a_35_viewFlipper.ViewFlipperActviity"></activity>
         <activity android:name=".a_36_Toast.ImageToastActivity"></activity>
+        <activity android:name=".a_37_calendarView.CalendarViewActivity"></activity>
+        <activity android:name=".a_37_1_CalendarPiackerDialog.CalendarPickerDialogActivity"></activity>
     </application>
 
 </manifest>
