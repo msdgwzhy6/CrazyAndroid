@@ -11,6 +11,13 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dp50"
         android:text="点击展示日期选择的dialog"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="日期是"/>
 
     <Button
         android:id="@+id/bt_showTPD"
@@ -19,5 +26,15 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dp50"
         android:text="点击展示时间选择的dialog"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="时间是"/>
 
 </LinearLayout>
+
+
+    
