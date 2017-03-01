@@ -1,4 +1,4 @@
-package com.cnpeng.cnpeng_demos2017_01.a_38_1_DatePickerDialogAndTimerPickerDialg;
+package com.cnpeng.cnpeng_demos2017_01.a_39_DatePickerDialogAndTimerPickerDialg;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -14,8 +14,6 @@ import android.widget.TimePicker;
 import com.cnpeng.cnpeng_demos2017_01.R;
 
 import java.util.Calendar;
-
-import static android.R.string.no;
 
 /**
  * 作者：CnPeng

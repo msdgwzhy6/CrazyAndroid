@@ -42,10 +42,11 @@ import com.cnpeng.cnpeng_demos2017_01.a_33_ImageSwitcher.ImageSwitcherActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_34_textSwitcher.TextSwitcherActvity;
 import com.cnpeng.cnpeng_demos2017_01.a_35_viewFlipper.ViewFlipperActviity;
 import com.cnpeng.cnpeng_demos2017_01.a_36_Toast.ImageToastActivity;
-import com.cnpeng.cnpeng_demos2017_01.a_38_1_DatePickerDialogAndTimerPickerDialg
+import com.cnpeng.cnpeng_demos2017_01.a_39_DatePickerDialogAndTimerPickerDialg
         .DatePickerDialogAndTimerPickerDialogActvitiy;
 import com.cnpeng.cnpeng_demos2017_01.a_38_DatePiackerAndTimePicker.DatePickerAndTimerPickerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_37_calendarView.CalendarViewActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_40_NumberPicker.NumberPickerActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btCalendarView.setOnClickListener(this);
         binding.btCalendarPicker.setOnClickListener(this);
         binding.btDatePickerDialog.setOnClickListener(this);
+        binding.btNumberPicker.setOnClickListener(this);
     }
 
     @Override
@@ -224,6 +226,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_datePickerDialog:
                 CommonUtils.mStartActivity(this, DatePickerDialogAndTimerPickerDialogActvitiy.class);
+                break;
+            case R.id.bt_NumberPicker:
+                CommonUtils.mStartActivity(this, NumberPickerActivity.class);
                 break;
         }
     }

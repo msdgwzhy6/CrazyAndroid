@@ -2,13 +2,10 @@ package com.cnpeng.cnpeng_demos2017_01.a_01_WebView01;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ViewGroup;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.cnpeng.cnpeng_demos2017_01.R;
 
