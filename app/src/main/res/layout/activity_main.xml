@@ -349,6 +349,13 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="40_NumberPicker的使用"/>
+            <Button
+                android:id="@+id/bt_SearchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="41_Searchview的使用"/>
 
 
             <Button

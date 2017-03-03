@@ -87,6 +87,7 @@
         <activity
             android:name=".a_39_DatePickerDialogAndTimerPickerDialg.DatePickerDialogAndTimerPickerDialogActvitiy"></activity>
         <activity android:name=".a_40_NumberPicker.NumberPickerActivity"></activity>
+        <activity android:name=".a_41_SearchView.SearchViewActivtiy"></activity>
     </application>
 
 </manifest>
