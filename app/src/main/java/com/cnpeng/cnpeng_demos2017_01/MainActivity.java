@@ -49,6 +49,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_37_calendarView.CalendarViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_40_NumberPicker.NumberPickerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_41_SearchView.SearchViewActivtiy;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
+import com.cnpeng.cnpeng_demos2017_01.b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btDatePickerDialog.setOnClickListener(this);
         binding.btNumberPicker.setOnClickListener(this);
         binding.btSearchView.setOnClickListener(this);
+        binding.btDrawerLayout.setOnClickListener(this);
     }
 
     @Override
@@ -234,6 +236,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_SearchView:
                 CommonUtils.mStartActivity(this, SearchViewActivtiy.class);
+                break;
+            case R.id.bt_drawerLayout:
+                CommonUtils.mStartActivity(this, DrawerLayoutActivity.class);
                 break;
         }
     }

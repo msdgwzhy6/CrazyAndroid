@@ -6,6 +6,7 @@
         <item name="colorPrimary">#739ef2</item>
         <item name="colorPrimaryDark">#739ef2</item>
         <item name="colorAccent">#739ef2</item>
+        <item name="android:colorForeground">@android:color/background_light</item>
     </style>
 
     <!--这个是用来更改RatingBar 的默认图片的，其实可以直接给RatingBar设置 progressDrawbale-->
@@ -15,5 +16,12 @@
         <item name="android:maxHeight">@dimen/dp15</item>
         <item name="android:minHeight">@dimen/dp15</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 </resources>

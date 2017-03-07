@@ -88,6 +88,9 @@
             android:name=".a_39_DatePickerDialogAndTimerPickerDialg.DatePickerDialogAndTimerPickerDialogActvitiy"></activity>
         <activity android:name=".a_40_NumberPicker.NumberPickerActivity"></activity>
         <activity android:name=".a_41_SearchView.SearchViewActivtiy"></activity>
+        <activity android:name=".b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+        ></activity>
     </application>
 
 </manifest>

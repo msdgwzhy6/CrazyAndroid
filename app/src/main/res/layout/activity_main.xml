@@ -365,6 +365,13 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="b01_ImageSpan和SpannableString配合使用给TextView任意位置插入图片"/>
+            <Button
+                android:id="@+id/bt_drawerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b01_给DrawerLayout侧边栏加入沉浸式"/>
 
         </LinearLayout>
     </ScrollView>
