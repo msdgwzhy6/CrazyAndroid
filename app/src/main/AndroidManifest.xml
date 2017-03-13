@@ -61,11 +61,9 @@
         <activity android:name=".a_20_showLvWithArrayAdapter.ArrayAdapterActivity"></activity>
 
         <activity android:name=".a_21_ListActivity.MyListActivity"></activity>
-
         <activity android:name=".a_23_autoCompleteTextView.AutoCompleteTextViewActivity"></activity>
         <activity android:name=".a_24_gridView.GridViewActivity"></activity>
         <activity android:name=".a_25_expandableListView.ExpandableListViewActivity"></activity>
-
         <activity android:name=".a_26_spinner.SpinnerActivity"
                   android:theme="@style/Base.Theme.AppCompat.Light"></activity>
         <activity android:name=".a_27_AdapterViewFlipper.AdapterViewFlipperActivity"></activity>
@@ -76,8 +74,6 @@
         <activity android:name=".a_32_ViewSwitcher.ViewSwitcherActivity"></activity>
         <activity android:name=".a_32_ViewSwitcher.ViewSwitcherActivity2"></activity>
         <activity android:name=".a_33_ImageSwitcher.ImageSwitcherActivity"></activity>
-        <activity
-            android:name=".b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity"></activity>
         <activity android:name=".a_34_textSwitcher.TextSwitcherActvity"></activity>
         <activity android:name=".a_35_viewFlipper.ViewFlipperActviity"></activity>
         <activity android:name=".a_36_Toast.ImageToastActivity"></activity>
@@ -88,6 +84,11 @@
             android:name=".a_39_DatePickerDialogAndTimerPickerDialg.DatePickerDialogAndTimerPickerDialogActvitiy"></activity>
         <activity android:name=".a_40_NumberPicker.NumberPickerActivity"></activity>
         <activity android:name=".a_41_SearchView.SearchViewActivtiy"></activity>
+        <activity android:name=".a_42_tabHost.TabHostActivity"></activity>
+        <activity android:name=".a_43_scrollView.ScrollViewActivity"></activity>
+
+        <activity
+            android:name=".b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity"></activity>
         <activity android:name=".b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity"
                   android:theme="@style/AppTheme.NoActionBar"
         ></activity>

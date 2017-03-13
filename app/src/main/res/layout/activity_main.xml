@@ -356,6 +356,20 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="41_Searchview的使用"/>
+            <Button
+                android:id="@+id/bt_tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="42_TabHost的使用"/>
+            <Button
+                android:id="@+id/bt_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="43_ScrollView的使用"/>
 
 
             <Button
