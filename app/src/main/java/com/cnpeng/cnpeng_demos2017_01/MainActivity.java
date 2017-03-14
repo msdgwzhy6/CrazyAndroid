@@ -50,6 +50,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_40_NumberPicker.NumberPickerActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_41_SearchView.SearchViewActivtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_42_tabHost.TabHostActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_43_scrollView.ScrollViewActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_44_notification.NotificationActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btDrawerLayout.setOnClickListener(this);
         binding.btTabhost.setOnClickListener(this);
         binding.btScrollview.setOnClickListener(this);
+        binding.btNotification.setOnClickListener(this);
     }
 
     @Override
@@ -249,6 +251,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_scrollview:
                 CommonUtils.mStartActivity(this, ScrollViewActivity.class);
+                break;
+            case R.id.bt_notification:
+                CommonUtils.mStartActivity(this, NotificationActivity.class);
                 break;
         }
     }
