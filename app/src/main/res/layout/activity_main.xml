@@ -392,7 +392,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
-                android:text="b01_给DrawerLayout侧边栏加入沉浸式"/>
+                android:text="b02_给DrawerLayout侧边栏加入沉浸式"/>
+            <Button
+                android:id="@+id/bt_suspendAndLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b04_lv上拉时展示一个悬浮条固定在屏幕顶端"/>
 
         </LinearLayout>
     </ScrollView>

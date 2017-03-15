@@ -53,6 +53,7 @@ import com.cnpeng.cnpeng_demos2017_01.a_43_scrollView.ScrollViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_44_notification.NotificationActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity;
+import com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView.SuspendAndListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btTabhost.setOnClickListener(this);
         binding.btScrollview.setOnClickListener(this);
         binding.btNotification.setOnClickListener(this);
+        binding.btSuspendAndLv.setOnClickListener(this);
     }
 
     @Override
@@ -254,6 +256,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_notification:
                 CommonUtils.mStartActivity(this, NotificationActivity.class);
+                break;
+            case R.id.bt_suspendAndLv:
+                CommonUtils.mStartActivity(this, SuspendAndListViewActivity.class);
                 break;
         }
     }
