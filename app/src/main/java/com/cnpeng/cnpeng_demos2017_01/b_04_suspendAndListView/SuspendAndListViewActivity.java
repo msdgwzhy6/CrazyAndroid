@@ -57,8 +57,9 @@ public class SuspendAndListViewActivity extends AppCompatActivity {
 
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                LogUtils.e("第一条可见的条目是:", firstVisibleItem + "");
-                if (firstVisibleItem >= 1) {
+                
+                //1 控制是否需要展示悬浮条
+                if (firstVisibleItem >= 1) {    //因为加了两个头布局，所以从2 开始才是真正的数据内容
                     suspend_backup.setVisibility(View.VISIBLE);
                     suspend_backup.setText(text);   //滚动的过程中，动态设置TV的text
                 } else {

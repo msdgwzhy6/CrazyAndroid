@@ -91,12 +91,15 @@
         <activity android:name=".a_42_tabHost.TabHostActivity"></activity>
         <activity android:name=".a_43_scrollView.ScrollViewActivity"></activity>
         <activity android:name=".a_44_notification.NotificationActivity"></activity>
+        <activity android:name=".a_45_alertDialog.AlertDialogActivity"></activity>
 
         <activity
             android:name=".b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity"></activity>
         <activity android:name=".b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity"
                   android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".b_04_suspendAndListView.SuspendAndListViewActivity"></activity>
+        <activity android:name=".b_04_suspendAndListView.SuspendAndListViewActivity2"></activity>
+        
     </application>
 
 </manifest>

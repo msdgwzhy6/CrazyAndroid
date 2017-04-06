@@ -51,9 +51,11 @@ import com.cnpeng.cnpeng_demos2017_01.a_41_SearchView.SearchViewActivtiy;
 import com.cnpeng.cnpeng_demos2017_01.a_42_tabHost.TabHostActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_43_scrollView.ScrollViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.a_44_notification.NotificationActivity;
+import com.cnpeng.cnpeng_demos2017_01.a_45_alertDialog.AlertDialogActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_01_spannableString_ImageSpan.SpannableStringAndImageSpanActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_02_DrawerLayoutAndImmersion.DrawerLayoutActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView.SuspendAndListViewActivity;
+import com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView.SuspendAndListViewActivity2;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -111,6 +113,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btScrollview.setOnClickListener(this);
         binding.btNotification.setOnClickListener(this);
         binding.btSuspendAndLv.setOnClickListener(this);
+        binding.btAlertDialog.setOnClickListener(this);
+        binding.btSuspendAndLv2.setOnClickListener(this);
     }
 
     @Override
@@ -259,6 +263,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_suspendAndLv:
                 CommonUtils.mStartActivity(this, SuspendAndListViewActivity.class);
+                break;
+            case R.id.bt_alertDialog:
+                CommonUtils.mStartActivity(this, AlertDialogActivity.class);
+                break;
+            case R.id.bt_suspendAndLv2:
+                CommonUtils.mStartActivity(this, SuspendAndListViewActivity2.class);
                 break;
         }
     }
