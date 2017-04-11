@@ -99,6 +99,7 @@
                   android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".b_04_suspendAndListView.SuspendAndListViewActivity"></activity>
         <activity android:name=".b_04_suspendAndListView.SuspendAndListViewActivity2"></activity>
+        <activity android:name=".b_05_alertDialog_dismiss.DissmissAlertDialog"></activity>
         
     </application>
 

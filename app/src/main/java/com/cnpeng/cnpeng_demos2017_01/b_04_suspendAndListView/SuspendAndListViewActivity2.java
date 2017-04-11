@@ -3,7 +3,6 @@ package com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -47,20 +46,6 @@ public class SuspendAndListViewActivity2 extends AppCompatActivity {
     private int                            startY;      //触摸屏幕时的起始Y坐标点
     private ListView                       listView;
     private LayoutInflater                 inflater;
-
-    //    Handler handler = new Handler() {
-    //        @Override
-    //        public void handleMessage(Message msg) {
-    //            super.handleMessage(msg);
-    //            if (msg.what == 0) {
-    //                isUploading = false;
-    //                isBottom = false; //实际项目中，根据网络请求来的数据进行处理，如果请求回来的数据集合为空则不用置为false，如果请求回来的数据不为空，则置为false
-    //                listView.removeFooterView(footerView);
-    //                adapter.notifyDataChanged(list);   //这个通知更新必须放在外面，放里面就会报错：提示是否在非主线程更新了adapter或者未通知数据更新
-    //            }
-    //        }
-    //    };
-    //    private View footerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -203,62 +188,8 @@ public class SuspendAndListViewActivity2 extends AppCompatActivity {
                 }
             }, 5000);
 
-            adapter.notifyDataChanged(list);   //这个通知更新必须放在外面，放里面就会报错：提示是否在非主线程更新了adapter或者未通知数据更新 
-
-
-            //下面这种写法会崩溃，没想明白为什么。
-            // java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a
-            // notification. Make sure the content of your adapter is not modified from a background thread, but only
-            // from the UI thread. Make sure your adapter calls notifyDataSetChanged() when its content changes. [in 
-            // ListView(2131624189, class android.widget.ListView) with Adapter(class android.widget
-            // .HeaderViewListAdapter)]
-            // //模拟加载数据
-            // for (int i = 0; i < 10; i++) {
-            //    list.add("上拉加载出来的数据" + System.currentTimeMillis() + "----" + i);
-            // }
-            // // 模拟加载数据
-            // new Handler().postDelayed(new Runnable() {
-            //     @Override
-            //     public void run() {
-            //         isUploading = false;
-            //         isBottom = false; //实际项目中，根据网络请求来的数据进行处理，如果请求回来的数据集合为空则不用置为false，如果请求回来的数据不为空，则置为false
-            //         listView.removeFooterView(footerView);
-            //         adapter.notifyDataChanged(list);   //这个通知更新必须放在外面，放里面就会报错：提示是否在非主线程更新了adapter或者未通知数据更新
-            //     }
-            // }, 5000);
-
-
-            //同上，一样会崩溃！View中有 postDelayed 方法，
-            // //模拟加载数据
-            // for (int i = 0; i < 10; i++) {
-            //     list.add("上拉加载出来的数据" + System.currentTimeMillis() + "----" + i);
-            // }
-            // // 模拟加载数据
-            // listView.postDelayed(new Runnable() {
-            //     @Override
-            //     public void run() {
-            //         isUploading = false;
-            //         isBottom = false; //实际项目中，根据网络请求来的数据进行处理，如果请求回来的数据集合为空则不用置为false，如果请求回来的数据不为空，则置为false
-            //         listView.removeFooterView(footerView);
-            //         adapter.notifyDataChanged(list);   //这个通知更新必须放在外面，放里面就会报错：提示是否在非主线程更新了adapter或者未通知数据更新
-            //     }
-            // }, 5000);
-
-
-            //            //这种方式无法展示脚布局，而且界面不流畅，会很卡
-            //            new Thread(new Runnable() {
-            //                @Override
-            //                public void run() {
-            //                    //模拟加载数据
-            //                    for (int i = 0; i < 10; i++) {
-            //                        list.add("上拉加载出来的数据" + System.currentTimeMillis() + "----" + i);
-            //                    }
-            //                    handler.sendEmptyMessageDelayed(0, 3000);
-            //                }
-            //            }).start();
-
+            adapter.notifyDataChanged(list);   //这个通知更新必须放在外面，放里面就会报错：提示是否在非主线程更新了adapter或者未通知数据更新
         }
-
     }
 
     /**

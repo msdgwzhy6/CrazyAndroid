@@ -415,6 +415,13 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="b0402_lv上拉时展示一个悬浮条固定在屏幕顶端"/>
+            <Button
+                android:id="@+id/bt_dismissAlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b05_关闭AlertDialog"/>
 
         </LinearLayout>
     </ScrollView>
