@@ -16,7 +16,9 @@ import com.cnpeng.cnpeng_demos2017_01.R;
  * <p>
  * 时间：2017/4/11:下午2:16
  * <p>
- * 说明：
+ * 说明：本来是写属性动画来着。写着写着就写成了 如何去掉LV上方的控件。之所以没用头布局，是为了考虑当前项目中的广场列表界面
+ * 广场列表界面中， 是 VP +TAB + FM ，为了保留VP的左右滑动，就所以写了这个DEMO。DEMO中虽然在滑动到顶部的时候会出现闪
+ * 的状况，但是移植到项目中之后，完全不好使了。。。。。。。。。这真是简直了。。。。。
  */
 
 public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
@@ -30,6 +32,7 @@ public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
     private ListView     lv_oaAndLv;
     private boolean      isTransDown;
     private int          curY;
+    private boolean      isLastItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,9 @@ public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
                         showSearcheHintView();
                     }
                 }
+
+                //是否到了最后一个条目（只判断是否是最后一个条目即可）
+                isLastItem = totalItemCount == firstVisibleItem + visibleItemCount;
             }
         });
 
@@ -87,7 +93,6 @@ public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 
     /**
@@ -102,7 +107,7 @@ public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
 
         //        if (isLvTop && isTransUp) {    //如果在LV顶端，且在执行上拉，则gone掉最顶部控件
         //如果在LV顶端，且在执行上拉，则gone掉最顶部控件 TODO还需要判断LV的高度是否高于窗体，如果小于窗体就不要拿掉控件了
-        if (isTransUp) {
+        if (isTransUp && !isLastItem) {
             bt_titleAboveLv.setVisibility(View.GONE);
         }
     }
