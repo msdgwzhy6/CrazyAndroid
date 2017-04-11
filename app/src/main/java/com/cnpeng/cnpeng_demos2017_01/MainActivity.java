@@ -57,6 +57,7 @@ import com.cnpeng.cnpeng_demos2017_01.b_02_DrawerLayoutAndImmersion.DrawerLayout
 import com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView.SuspendAndListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.b_04_suspendAndListView.SuspendAndListViewActivity2;
 import com.cnpeng.cnpeng_demos2017_01.b_05_alertDialog_dismiss.DissmissAlertDialog;
+import com.cnpeng.cnpeng_demos2017_01.b_06_ObjectAnimator.ObjectAnimatorAndListViewActivity;
 import com.cnpeng.cnpeng_demos2017_01.databinding.ActivityMainBinding;
 import com.cnpeng.cnpeng_demos2017_01.utils.CommonUtils;
 
@@ -117,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btAlertDialog.setOnClickListener(this);
         binding.btSuspendAndLv2.setOnClickListener(this);
         binding.btDismissAlertDialog.setOnClickListener(this);
+        binding.btObjectAnimator.setOnClickListener(this);
     }
 
     @Override
@@ -274,6 +276,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_dismissAlertDialog:
                 CommonUtils.mStartActivity(this, DissmissAlertDialog.class);
+                break;
+            case R.id.bt_objectAnimator:
+                CommonUtils.mStartActivity(this, ObjectAnimatorAndListViewActivity.class);
                 break;
         }
     }

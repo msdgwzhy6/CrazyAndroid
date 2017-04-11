@@ -422,6 +422,14 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="b05_关闭AlertDialog"/>
+            
+            <Button
+                android:id="@+id/bt_objectAnimator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b06_属性动画的基本使用"/>
 
         </LinearLayout>
     </ScrollView>
