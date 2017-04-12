@@ -429,7 +429,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
-                android:text="b06_属性动画的基本使用"/>
+                android:text="b06_不使用头布局时如何移除LV顶部的View"/>
+            <Button
+                android:id="@+id/bt_bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b07_BottomNavigationView 的使用"/>
 
         </LinearLayout>
     </ScrollView>

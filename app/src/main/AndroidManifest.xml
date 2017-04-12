@@ -101,7 +101,7 @@
         <activity android:name=".b_04_suspendAndListView.SuspendAndListViewActivity2"></activity>
         <activity android:name=".b_05_alertDialog_dismiss.DissmissAlertDialog"></activity>
         <activity android:name=".b_06_ObjectAnimator.ObjectAnimatorAndListViewActivity"></activity>
-        
+        <activity android:name=".b_07_bottomNavigationView.BottomNavigationViewActivity"></activity>
     </application>
 
 </manifest>
