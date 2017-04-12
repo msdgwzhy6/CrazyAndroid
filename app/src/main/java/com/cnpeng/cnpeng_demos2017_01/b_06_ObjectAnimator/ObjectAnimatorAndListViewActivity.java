@@ -1,5 +1,6 @@
 package com.cnpeng.cnpeng_demos2017_01.b_06_ObjectAnimator;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -101,14 +102,38 @@ public class ObjectAnimatorAndListViewActivity extends AppCompatActivity {
     private void showSearcheHintView() {
         if (isLvTop && isTransDown) {   //如果在LV顶部，且正在执行下拉。整体下移,展示顶部控件
             if (View.GONE == bt_titleAboveLv.getVisibility()) {
-                bt_titleAboveLv.setVisibility(View.VISIBLE);
+//                bt_titleAboveLv.setVisibility(View.VISIBLE);
+                
+                //使用属性动画，虽然是将内容挪出去了，但是还占着位置啊！！！！！！！
+                ObjectAnimator showAnimator=ObjectAnimator.ofFloat(bt_titleAboveLv,"translationY",0,100);
+                showAnimator.setDuration(300);
+                showAnimator.start();
             }
         }
 
         //        if (isLvTop && isTransUp) {    //如果在LV顶端，且在执行上拉，则gone掉最顶部控件
         //如果在LV顶端，且在执行上拉，则gone掉最顶部控件 TODO还需要判断LV的高度是否高于窗体，如果小于窗体就不要拿掉控件了
         if (isTransUp && !isLastItem) {
-            bt_titleAboveLv.setVisibility(View.GONE);
+//            bt_titleAboveLv.setVisibility(View.GONE);
+            ObjectAnimator showAnimator=ObjectAnimator.ofFloat(bt_titleAboveLv,"translationY",0,-100);
+            showAnimator.setDuration(300);
+            showAnimator.start();
         }
     }
+
+
+    //   // 不使用动画，直接gone掉view
+    //        private void showSearcheHintView() {
+    //            if (isLvTop && isTransDown) {   //如果在LV顶部，且正在执行下拉。整体下移,展示顶部控件
+    //                if (View.GONE == bt_titleAboveLv.getVisibility()) {
+    //                    bt_titleAboveLv.setVisibility(View.VISIBLE);
+    //                }
+    //            }
+    //
+    //            //        if (isLvTop && isTransUp) {    //如果在LV顶端，且在执行上拉，则gone掉最顶部控件
+    //            //如果在LV顶端，且在执行上拉，则gone掉最顶部控件 TODO还需要判断LV的高度是否高于窗体，如果小于窗体就不要拿掉控件了
+    //            if (isTransUp && !isLastItem) {
+    //                bt_titleAboveLv.setVisibility(View.GONE);
+    //            }
+    //        }
 }
