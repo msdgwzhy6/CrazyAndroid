@@ -102,6 +102,8 @@
         <activity android:name=".b_05_alertDialog_dismiss.DissmissAlertDialog"></activity>
         <activity android:name=".b_06_ObjectAnimator.ObjectAnimatorAndListViewActivity"></activity>
         <activity android:name=".b_07_bottomNavigationView.BottomNavigationViewActivity"></activity>
+        <activity android:name=".b_08_CL_TB_VP_RV.ClTbVpRvActivity"
+                  android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

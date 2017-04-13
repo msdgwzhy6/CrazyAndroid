@@ -437,6 +437,13 @@
                 android:layout_marginTop="@dimen/dp5"
                 android:gravity="left|center_vertical"
                 android:text="b07_BottomNavigationView 的使用"/>
+            <Button
+                android:id="@+id/bt_ClTbVpRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="left|center_vertical"
+                android:text="b08_布局协调者实现标题滚出的效果"/>
 
         </LinearLayout>
     </ScrollView>
