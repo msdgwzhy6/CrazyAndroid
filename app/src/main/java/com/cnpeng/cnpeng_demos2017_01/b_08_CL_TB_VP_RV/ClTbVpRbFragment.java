@@ -6,6 +6,7 @@ import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -70,7 +71,12 @@ public class ClTbVpRbFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fm_cltbvprv, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv_clTbVpRv);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
+        DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(), 
+                mLayoutManager.getOrientation());
+        recyclerView.addItemDecoration(mDividerItemDecoration);
+        recyclerView.setLayoutManager(mLayoutManager);
 
         rvAdapter = new ClTbVpRvRecyclerViewAdapter(items, getActivity());
         recyclerView.setAdapter(rvAdapter);
@@ -88,18 +94,18 @@ public class ClTbVpRbFragment extends Fragment {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-//                //模拟更新数据，并关闭刷新
-//                for (int i = 0; i < 10; i++) {
-//                    items.add("下拉出来的数据" + i);
-//                }
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        swipeRefreshLayout.setRefreshing(false);    //关闭刷新
-//                    }
-//                }, 2500);
-//
-//                rvAdapter.setNewList(items);
+                //                //模拟更新数据，并关闭刷新
+                //                for (int i = 0; i < 10; i++) {
+                //                    items.add("下拉出来的数据" + i);
+                //                }
+                //                new Handler().postDelayed(new Runnable() {
+                //                    @Override
+                //                    public void run() {
+                //                        swipeRefreshLayout.setRefreshing(false);    //关闭刷新
+                //                    }
+                //                }, 2500);
+                //
+                //                rvAdapter.setNewList(items);
 
             }
         });
