@@ -1,9 +1,11 @@
 package com.cnpeng.cnpeng_demos2017_01.b_08_CL_TB_VP_RV;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,6 +16,8 @@ import com.cnpeng.cnpeng_demos2017_01.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.R.attr.fragment;
 
 
 /**
@@ -26,8 +30,10 @@ import java.util.List;
 
 public class ClTbVpRbFragment extends Fragment {
 
-    private int  index;     //当前被选中的标题索引
-    private View view;      //Fragment 中的视图view
+    private int                         index;     //当前被选中的标题索引
+    private View                        view;      //Fragment 中的视图view
+    private List<String>                items;
+    private ClTbVpRvRecyclerViewAdapter rvAdapter;
 
 
     public static Fragment getInstance(int position) {
@@ -57,17 +63,45 @@ public class ClTbVpRbFragment extends Fragment {
         //      }
         // }
 
-        List<String> items = new ArrayList<>();
+        items = new ArrayList<>();
         for (int i = 'A'; i < 'z'; i++) {
-            items.add(index + "——" + (char) i+"----------------------------------------");
+            items.add(index + "——" + (char) i + "----------------------------------------");
         }
 
         view = inflater.inflate(R.layout.fm_cltbvprv, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv_clTbVpRv);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        ClTbVpRvRecyclerViewAdapter rvAdapter = new ClTbVpRvRecyclerViewAdapter(items, getActivity());
+        rvAdapter = new ClTbVpRvRecyclerViewAdapter(items, getActivity());
         recyclerView.setAdapter(rvAdapter);
+
+        initPull2Refresh(view);
         return view;
+    }
+
+    /**
+     * 初始化下拉刷新监听
+     */
+    private void initPull2Refresh(View fragmentView) {
+        final SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) fragmentView.findViewById(R.id.srl_ClTbVpRv);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+//                //模拟更新数据，并关闭刷新
+//                for (int i = 0; i < 10; i++) {
+//                    items.add("下拉出来的数据" + i);
+//                }
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        swipeRefreshLayout.setRefreshing(false);    //关闭刷新
+//                    }
+//                }, 2500);
+//
+//                rvAdapter.setNewList(items);
+
+            }
+        });
     }
 }

@@ -20,12 +20,20 @@ import java.util.List;
  */
 
 class ClTbVpRvRecyclerViewAdapter extends RecyclerView.Adapter<CusHolder> {
-    private final List<String> items;
-    private final Context      context;
+    private List<String> items;
+    private Context      context;
 
     public ClTbVpRvRecyclerViewAdapter(List<String> items, Context context) {
         this.items = items;
         this.context = context;
+    }
+
+    /**
+     * 更新数据的方法
+     */
+    public void setNewList(List<String> newItems) {
+        this.items = newItems;
+        notifyDataSetChanged();
     }
 
     @Override

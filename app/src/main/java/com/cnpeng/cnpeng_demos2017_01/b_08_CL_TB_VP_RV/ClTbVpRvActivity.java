@@ -1,6 +1,5 @@
 package com.cnpeng.cnpeng_demos2017_01.b_08_CL_TB_VP_RV;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
@@ -20,9 +19,12 @@ import com.cnpeng.cnpeng_demos2017_01.utils.LogUtils;
  * 时间：2017/4/12:下午4:41
  * <p>
  * 说明：CoordinatorLayout + ViewPager + TabLayout + RecyclerView + AppBarLayout + CollapsingToolbarLayout
- * 整合以上控件实现，上滑时隐藏最顶部的内容，下拉LV到顶时展示隐藏的内容，并且能实现左右侧滑，还能让 RV 流畅运行
+ * 整合以上控件实现，上滑时隐藏最顶部的内容，下拉LV到顶时展示隐藏的内容，并且能实现左右侧滑。
  * <p>
- * TODO 下一步要实现的是：LV的上拉和下拉
+ * 注意：使用这种方式，在下拉时如果想让RV 到顶后再下拉 AppBar中的内容，那么不可避免的就是，在下拉的 Fling 时 ，会先在TabLayout 处停顿一下。
+ * 如果在下拉的同时就下来 AppBar 和 Rv ，则不会产生卡顿，如果 AppBar中的内容比较少的时候，可以使用这种方式，即 scroll|enterAlways
+ * <p>
+ * TODO 下一步要实现的是：RV的上拉和下拉、考虑在展示标题栏的放大镜时加一个透明度渐变
  */
 
 public class ClTbVpRvActivity extends AppCompatActivity {
@@ -72,23 +74,34 @@ public class ClTbVpRvActivity extends AppCompatActivity {
                 TextView tv_titleBar = (TextView) findViewById(R.id.tv_titleBar_ClTbVpRv);
 
                 int appBarHeight = appBar_clTbVpRv.getHeight();
+
+                //使用这种方式的话，实现的效果是，初始的时候在顶部会有一个搜索提示框，上拉之后提示框滚出去就滚不回来了，然后在标题栏给出一个搜索放大镜
                 if (appBarHeight + verticalOffset == 0) {    //说明appBar 已经滚出去看不见了
                     LogUtils.e("appBar滚出去了：", "展示标题栏的搜索按钮");
                     Toast.makeText(ClTbVpRvActivity.this, "appBar滚出去了，展示标题栏的搜索按钮", Toast.LENGTH_SHORT).show();
                     tv_titleBar.setCompoundDrawablesWithIntrinsicBounds(null, null, getResources().getDrawable
                             (android.R.drawable.ic_search_category_default), null);
+                    appBar_clTbVpRv.removeAllViews();
                 }
 
-                if (verticalOffset == 0) {  //此时应该先判断标题栏的搜索按钮的显示属性，如果当前可见，则隐藏。如果当前可见，不做操作
-                    LogUtils.e("appBar滚回来了：", "隐藏标题栏的搜索按钮");
-                    Toast.makeText(ClTbVpRvActivity.this, "appBar滚回来了，隐藏标题栏的搜索按钮", Toast.LENGTH_SHORT).show();
-                    Drawable[] drawables = tv_titleBar.getCompoundDrawables();
-                    if (drawables.length > 0) {
-                        tv_titleBar.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
-                    }
-                }
+                //使用这种方式，既能滚出去也能滚回来，但是在RV滚到顶端时会停住，再次下拉才能显示AppBar
+                // if (appBarHeight + verticalOffset == 0) {    //说明appBar 已经滚出去看不见了
+                //     LogUtils.e("appBar滚出去了：", "展示标题栏的搜索按钮");
+                //     Toast.makeText(ClTbVpRvActivity.this, "appBar滚出去了，展示标题栏的搜索按钮", Toast.LENGTH_SHORT).show();
+                //     tv_titleBar.setCompoundDrawablesWithIntrinsicBounds(null, null, getResources().getDrawable
+                //             (android.R.drawable.ic_search_category_default), null);
+                //     appBar_clTbVpRv.removeAllViews();
+                // }
+                //
+                // if (verticalOffset == 0) {  //此时应该先判断标题栏的搜索按钮的显示属性，如果当前可见，则隐藏。如果当前可见，不做操作
+                //     LogUtils.e("appBar滚回来了：", "隐藏标题栏的搜索按钮");
+                //     Toast.makeText(ClTbVpRvActivity.this, "appBar滚回来了，隐藏标题栏的搜索按钮", Toast.LENGTH_SHORT).show();
+                //     Drawable[] drawables = tv_titleBar.getCompoundDrawables();
+                //     if (drawables.length > 0) {
+                //         tv_titleBar.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                //     }
+                // }
             }
         });
-
     }
 }
